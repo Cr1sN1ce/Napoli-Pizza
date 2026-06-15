@@ -111,10 +111,6 @@ function openLightbox(
     initializeLightboxEvents();
 }
 
-/* ===========================
-   LIGHTBOX EVENTS
-=========================== */
-
 function initializeLightboxEvents() {
     const lightbox =
         document.querySelector(
@@ -233,10 +229,6 @@ function updateLightboxImage() {
             currentIndex
         ].src;
 }
-
-/* ===========================
-   KEYBOARD
-=========================== */
 
 function initializeKeyboardControls() {
     document.addEventListener(

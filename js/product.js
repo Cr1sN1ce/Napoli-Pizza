@@ -51,9 +51,6 @@ async function loadProduct() {
     );
 }
 
-/* ===========================
-   UPDATE PRODUCT PAGE
-=========================== */
 
 function updateProductPage(
     product
