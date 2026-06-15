@@ -1,0 +1,26 @@
+[{
+        "id": "pizza",
+        "name": "Pizza",
+        "banner": "../assets/hero/pizza-banner.jpg"
+    },
+    {
+        "id": "burger",
+        "name": "Burger"
+    },
+    {
+        "id": "pasta",
+        "name": "Pasta"
+    },
+    {
+        "id": "salad",
+        "name": "Salate"
+    },
+    {
+        "id": "dessert",
+        "name": "Deserturi"
+    },
+    {
+        "id": "drinks",
+        "name": "Băuturi"
+    }
+]

@@ -1,0 +1,486 @@
+[{
+        "id": 1,
+        "category": "pizza",
+        "name": "Margherita",
+        "description": "Sos de roșii, mozzarella, busuioc",
+        "price": 120,
+        "weight": 550,
+        "featured": true,
+        "image": "../assets/products/pizza/margherita.jpg"
+    },
+    {
+        "id": 2,
+        "category": "pizza",
+        "name": "Diavola",
+        "description": "Salam picant, mozzarella",
+        "price": 145,
+        "weight": 600,
+        "featured": true,
+        "image": "../assets/products/pizza/diavola.jpg"
+    },
+    {
+        "id": 3,
+        "category": "pizza",
+        "name": "Capriciosa",
+        "description": "Șuncă, ciuperci, măsline",
+        "price": 150,
+        "weight": 650,
+        "featured": false,
+        "image": "../assets/products/pizza/capriciosa.jpg"
+    },
+    {
+        "id": 4,
+        "category": "pizza",
+        "name": "Quattro Formaggi",
+        "description": "Patru tipuri de brânză",
+        "price": 165,
+        "weight": 600,
+        "featured": true,
+        "image": "../assets/products/pizza/quattro-formaggi.jpg"
+    },
+    {
+        "id": 5,
+        "category": "pizza",
+        "name": "Prosciutto",
+        "description": "Șuncă și mozzarella",
+        "price": 145,
+        "weight": 620,
+        "featured": false,
+        "image": "../assets/products/pizza/prosciutto.jpg"
+    },
+    {
+        "id": 6,
+        "category": "pizza",
+        "name": "Vegetariana",
+        "description": "Legume proaspete și mozzarella",
+        "price": 135,
+        "weight": 580,
+        "featured": false,
+        "image": "../assets/products/pizza/vegetariana.jpg"
+    },
+    {
+        "id": 7,
+        "category": "pizza",
+        "name": "Napoli",
+        "description": "Anșoa, mozzarella, sos",
+        "price": 170,
+        "weight": 650,
+        "featured": true,
+        "image": "../assets/products/pizza/napoli.jpg"
+    },
+    {
+        "id": 8,
+        "category": "pizza",
+        "name": "BBQ Chicken",
+        "description": "Pui, sos BBQ, mozzarella",
+        "price": 175,
+        "weight": 700,
+        "featured": false,
+        "image": "../assets/products/pizza/bbq-chicken.jpg"
+    },
+
+    {
+        "id": 9,
+        "category": "burger",
+        "name": "Classic Burger",
+        "description": "Carne de vită, salată, sos",
+        "price": 110,
+        "weight": 350,
+        "featured": true,
+        "image": "../assets/products/burger/classic.jpg"
+    },
+    {
+        "id": 10,
+        "category": "burger",
+        "name": "Cheeseburger",
+        "description": "Vită și cheddar",
+        "price": 120,
+        "weight": 370,
+        "featured": true,
+        "image": "../assets/products/burger/cheese.jpg"
+    },
+    {
+        "id": 11,
+        "category": "burger",
+        "name": "Double Burger",
+        "description": "Două chiftele de vită",
+        "price": 155,
+        "weight": 500,
+        "featured": false,
+        "image": "../assets/products/burger/double.jpg"
+    },
+    {
+        "id": 12,
+        "category": "burger",
+        "name": "Chicken Burger",
+        "description": "Piept de pui crocant",
+        "price": 115,
+        "weight": 360,
+        "featured": false,
+        "image": "../assets/products/burger/chicken.jpg"
+    },
+    {
+        "id": 13,
+        "category": "burger",
+        "name": "BBQ Burger",
+        "description": "Vită și sos BBQ",
+        "price": 135,
+        "weight": 400,
+        "featured": false,
+        "image": "../assets/products/burger/bbq.jpg"
+    },
+    {
+        "id": 14,
+        "category": "burger",
+        "name": "Bacon Burger",
+        "description": "Bacon crocant și cheddar",
+        "price": 145,
+        "weight": 420,
+        "featured": true,
+        "image": "../assets/products/burger/bacon.jpg"
+    },
+    {
+        "id": 15,
+        "category": "burger",
+        "name": "Mexican Burger",
+        "description": "Ardei jalapeno și sos picant",
+        "price": 140,
+        "weight": 410,
+        "featured": false,
+        "image": "../assets/products/burger/mexican.jpg"
+    },
+    {
+        "id": 16,
+        "category": "burger",
+        "name": "Veggie Burger",
+        "description": "Burger vegetarian",
+        "price": 120,
+        "weight": 340,
+        "featured": false,
+        "image": "../assets/products/burger/veggie.jpg"
+    },
+
+    {
+        "id": 17,
+        "category": "pasta",
+        "name": "Carbonara",
+        "description": "Bacon, ou, parmezan",
+        "price": 135,
+        "weight": 450,
+        "featured": true,
+        "image": "../assets/products/pasta/carbonara.jpg"
+    },
+    {
+        "id": 18,
+        "category": "pasta",
+        "name": "Bolognese",
+        "description": "Ragu de vită",
+        "price": 140,
+        "weight": 470,
+        "featured": true,
+        "image": "../assets/products/pasta/bolognese.jpg"
+    },
+    {
+        "id": 19,
+        "category": "pasta",
+        "name": "Alfredo",
+        "description": "Smântână și parmezan",
+        "price": 145,
+        "weight": 460,
+        "featured": false,
+        "image": "../assets/products/pasta/alfredo.jpg"
+    },
+    {
+        "id": 20,
+        "category": "pasta",
+        "name": "Pesto",
+        "description": "Busuioc și parmezan",
+        "price": 135,
+        "weight": 430,
+        "featured": false,
+        "image": "../assets/products/pasta/pesto.jpg"
+    },
+    {
+        "id": 21,
+        "category": "pasta",
+        "name": "Frutti di Mare",
+        "description": "Fructe de mare",
+        "price": 190,
+        "weight": 500,
+        "featured": true,
+        "image": "../assets/products/pasta/frutti-di-mare.jpg"
+    },
+    {
+        "id": 22,
+        "category": "pasta",
+        "name": "Arrabbiata",
+        "description": "Sos picant de roșii",
+        "price": 130,
+        "weight": 420,
+        "featured": false,
+        "image": "../assets/products/pasta/arrabbiata.jpg"
+    },
+    {
+        "id": 23,
+        "category": "pasta",
+        "name": "Gorgonzola",
+        "description": "Brânză gorgonzola",
+        "price": 150,
+        "weight": 450,
+        "featured": false,
+        "image": "../assets/products/pasta/gorgonzola.jpg"
+    },
+    {
+        "id": 24,
+        "category": "pasta",
+        "name": "Pollo",
+        "description": "Pui și sos alb",
+        "price": 145,
+        "weight": 460,
+        "featured": false,
+        "image": "../assets/products/pasta/pollo.jpg"
+    },
+
+    {
+        "id": 25,
+        "category": "salad",
+        "name": "Caesar",
+        "description": "Pui, salată, parmezan",
+        "price": 95,
+        "weight": 320,
+        "featured": true,
+        "image": "../assets/products/salad/caesar.jpg"
+    },
+    {
+        "id": 26,
+        "category": "salad",
+        "name": "Greek",
+        "description": "Brânză feta și măsline",
+        "price": 90,
+        "weight": 300,
+        "featured": false,
+        "image": "../assets/products/salad/greek.jpg"
+    },
+    {
+        "id": 27,
+        "category": "salad",
+        "name": "Tuna",
+        "description": "Ton și legume",
+        "price": 105,
+        "weight": 340,
+        "featured": false,
+        "image": "../assets/products/salad/tuna.jpg"
+    },
+    {
+        "id": 28,
+        "category": "salad",
+        "name": "Caprese",
+        "description": "Mozzarella și roșii",
+        "price": 85,
+        "weight": 280,
+        "featured": false,
+        "image": "../assets/products/salad/caprese.jpg"
+    },
+    {
+        "id": 29,
+        "category": "salad",
+        "name": "Fresh Garden",
+        "description": "Legume proaspete",
+        "price": 80,
+        "weight": 290,
+        "featured": false,
+        "image": "../assets/products/salad/garden.jpg"
+    },
+    {
+        "id": 30,
+        "category": "salad",
+        "name": "Chicken Mix",
+        "description": "Pui și legume",
+        "price": 100,
+        "weight": 330,
+        "featured": true,
+        "image": "../assets/products/salad/chicken.jpg"
+    },
+    {
+        "id": 31,
+        "category": "salad",
+        "name": "Mediterranean",
+        "description": "Mix mediteranean",
+        "price": 110,
+        "weight": 340,
+        "featured": false,
+        "image": "../assets/products/salad/mediterranean.jpg"
+    },
+    {
+        "id": 32,
+        "category": "salad",
+        "name": "Avocado Salad",
+        "description": "Avocado și legume",
+        "price": 120,
+        "weight": 320,
+        "featured": true,
+        "image": "../assets/products/salad/avocado.jpg"
+    },
+
+    {
+        "id": 33,
+        "category": "dessert",
+        "name": "Tiramisu",
+        "description": "Desert italian clasic",
+        "price": 75,
+        "weight": 180,
+        "featured": true,
+        "image": "../assets/products/dessert/tiramisu.jpg"
+    },
+    {
+        "id": 34,
+        "category": "dessert",
+        "name": "Cheesecake",
+        "description": "Cheesecake cu fructe",
+        "price": 80,
+        "weight": 200,
+        "featured": true,
+        "image": "../assets/products/dessert/cheesecake.jpg"
+    },
+    {
+        "id": 35,
+        "category": "dessert",
+        "name": "Chocolate Cake",
+        "description": "Prăjitură cu ciocolată",
+        "price": 70,
+        "weight": 190,
+        "featured": false,
+        "image": "../assets/products/dessert/chocolate-cake.jpg"
+    },
+    {
+        "id": 36,
+        "category": "dessert",
+        "name": "Panna Cotta",
+        "description": "Desert italian cu vanilie",
+        "price": 65,
+        "weight": 170,
+        "featured": false,
+        "image": "../assets/products/dessert/panna-cotta.jpg"
+    },
+    {
+        "id": 37,
+        "category": "dessert",
+        "name": "Brownie",
+        "description": "Brownie cu ciocolată",
+        "price": 60,
+        "weight": 160,
+        "featured": false,
+        "image": "../assets/products/dessert/brownie.jpg"
+    },
+    {
+        "id": 38,
+        "category": "dessert",
+        "name": "Ice Cream",
+        "description": "Înghețată artizanală",
+        "price": 55,
+        "weight": 150,
+        "featured": true,
+        "image": "../assets/products/dessert/ice-cream.jpg"
+    },
+    {
+        "id": 39,
+        "category": "dessert",
+        "name": "Apple Pie",
+        "description": "Plăcintă cu mere",
+        "price": 65,
+        "weight": 180,
+        "featured": false,
+        "image": "../assets/products/dessert/apple-pie.jpg"
+    },
+    {
+        "id": 40,
+        "category": "dessert",
+        "name": "Donut",
+        "description": "Gogoașă glazurată",
+        "price": 40,
+        "weight": 120,
+        "featured": false,
+        "image": "../assets/products/dessert/donut.jpg"
+    },
+
+    {
+        "id": 41,
+        "category": "drinks",
+        "name": "Coca-Cola",
+        "description": "500 ml",
+        "price": 30,
+        "weight": 500,
+        "featured": true,
+        "image": "../assets/products/drinks/coca-cola.jpg"
+    },
+    {
+        "id": 42,
+        "category": "drinks",
+        "name": "Fanta",
+        "description": "500 ml",
+        "price": 30,
+        "weight": 500,
+        "featured": false,
+        "image": "../assets/products/drinks/fanta.jpg"
+    },
+    {
+        "id": 43,
+        "category": "drinks",
+        "name": "Sprite",
+        "description": "500 ml",
+        "price": 30,
+        "weight": 500,
+        "featured": false,
+        "image": "../assets/products/drinks/sprite.jpg"
+    },
+    {
+        "id": 44,
+        "category": "drinks",
+        "name": "Nestea",
+        "description": "500 ml",
+        "price": 35,
+        "weight": 500,
+        "featured": false,
+        "image": "../assets/products/drinks/nestea.jpg"
+    },
+    {
+        "id": 45,
+        "category": "drinks",
+        "name": "Orange Juice",
+        "description": "Suc natural",
+        "price": 40,
+        "weight": 400,
+        "featured": true,
+        "image": "../assets/products/drinks/orange-juice.jpg"
+    },
+    {
+        "id": 46,
+        "category": "drinks",
+        "name": "Apple Juice",
+        "description": "Suc natural",
+        "price": 40,
+        "weight": 400,
+        "featured": false,
+        "image": "../assets/products/drinks/apple-juice.jpg"
+    },
+    {
+        "id": 47,
+        "category": "drinks",
+        "name": "Mineral Water",
+        "description": "Apă minerală",
+        "price": 20,
+        "weight": 500,
+        "featured": false,
+        "image": "../assets/products/drinks/water.jpg"
+    },
+    {
+        "id": 48,
+        "category": "drinks",
+        "name": "Lemonade",
+        "description": "Limonadă de casă",
+        "price": 45,
+        "weight": 450,
+        "featured": true,
+        "image": "../assets/products/drinks/lemonade.jpg"
+    }
+]

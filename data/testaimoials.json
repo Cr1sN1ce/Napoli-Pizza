@@ -1,0 +1,37 @@
+[{
+        "id": 1,
+        "name": "Andrei",
+        "rating": 5,
+        "text": "Cea mai bună pizza din Cahul. Livrarea a fost rapidă și preparatele au ajuns fierbinți."
+    },
+    {
+        "id": 2,
+        "name": "Maria",
+        "rating": 5,
+        "text": "Personal foarte amabil și ingrediente proaspete. Recomand cu încredere."
+    },
+    {
+        "id": 3,
+        "name": "Ion",
+        "rating": 4,
+        "text": "Burgerii sunt gustoși, iar porțiile sunt generoase. Voi reveni cu siguranță."
+    },
+    {
+        "id": 4,
+        "name": "Cristina",
+        "rating": 5,
+        "text": "Paste excelente și deserturi delicioase. Atmosferă plăcută și servicii rapide."
+    },
+    {
+        "id": 5,
+        "name": "Valentin",
+        "rating": 5,
+        "text": "Comand frecvent pentru familie. Produsele sunt mereu de calitate."
+    },
+    {
+        "id": 6,
+        "name": "Elena",
+        "rating": 4,
+        "text": "Salatele sunt foarte proaspete, iar meniul oferă multe opțiuni pentru toate gusturile."
+    }
+]
