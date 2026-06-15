@@ -271,6 +271,10 @@
             try {
                 await fetch('https://script.google.com/macros/s/AKfycbynBe-u87q8LjR459ihmoWXqIheP18wvPfPbOtVf4aAxAh5Nu1aWd_W1OF6VrDaTkmN/exec', {
                     method: 'POST',
+                    mode: 'no-cors',
+                    headers: {
+                        'Content-Type': 'text/plain'
+                    },
                     body: JSON.stringify(data)
                 });
 
