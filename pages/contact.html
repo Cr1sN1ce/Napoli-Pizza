@@ -97,17 +97,11 @@
 
                     <form class="contact-form">
 
-                        <input type="text" placeholder="Nume">
-
-                        <input type="email" placeholder="Email">
-
-                        <input type="tel" placeholder="Telefon">
-
-                        <textarea placeholder="Mesajul tău"></textarea>
-
-                        <button type="submit" class="btn btn-primary">
-                        Trimite
-                    </button>
+                        <input type="text" id="inputNume" placeholder="Nume">
+                        <input type="email" id="inputEmail" placeholder="Email">
+                        <input type="tel" id="inputTelefon" placeholder="Telefon">
+                        <textarea id="inputMesaj" placeholder="Mesajul tău"></textarea>
+                        <button type="button" id="submitBtn" class="btn btn-primary">Trimite</button>
 
                     </form>
 
@@ -255,6 +249,44 @@
 
     </footer>
     <script src="../js/main.js"></script>
+    <script>
+        document.getElementById('submitBtn').addEventListener('click', async() => {
+            const btn = document.getElementById('submitBtn');
+
+            const data = {
+                nume: document.getElementById('inputNume').value.trim(),
+                email: document.getElementById('inputEmail').value.trim(),
+                telefon: document.getElementById('inputTelefon').value.trim(),
+                mesaj: document.getElementById('inputMesaj').value.trim()
+            };
+
+            if (!data.nume || !data.email || !data.mesaj) {
+                alert('Te rugăm completați câmpurile obligatorii.');
+                return;
+            }
+
+            btn.disabled = true;
+            btn.textContent = 'Se trimite...';
+
+            try {
+                await fetch('https://script.google.com/macros/s/AKfycbynBe-u87q8LjR459ihmoWXqIheP18wvPfPbOtVf4aAxAh5Nu1aWd_W1OF6VrDaTkmN/exec', {
+                    method: 'POST',
+                    body: JSON.stringify(data)
+                });
+
+                btn.textContent = 'Trimis ✓';
+                document.getElementById('inputNume').value = '';
+                document.getElementById('inputEmail').value = '';
+                document.getElementById('inputTelefon').value = '';
+                document.getElementById('inputMesaj').value = '';
+
+            } catch (err) {
+                alert('Eroare. Încearcă din nou.');
+                btn.disabled = false;
+                btn.textContent = 'Trimite';
+            }
+        });
+    </script>
 </body>
 
 </html>

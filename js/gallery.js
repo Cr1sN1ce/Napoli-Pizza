@@ -5,9 +5,6 @@ document.addEventListener(
     }
 );
 
-/* ===========================
-   GALLERY
-=========================== */
 
 let currentIndex = 0;
 
@@ -42,10 +39,6 @@ function initializeGallery() {
 
     initializeKeyboardControls();
 }
-
-/* ===========================
-   OPEN LIGHTBOX
-=========================== */
 
 function openLightbox(
     index
@@ -160,10 +153,6 @@ function initializeLightboxEvents() {
     );
 }
 
-/* ===========================
-   CLOSE
-=========================== */
-
 function closeLightbox() {
     const lightbox =
         document.querySelector(
@@ -178,10 +167,6 @@ function closeLightbox() {
         "";
 }
 
-/* ===========================
-   NEXT
-=========================== */
-
 function showNextImage() {
     currentIndex++;
 
@@ -195,10 +180,6 @@ function showNextImage() {
     updateLightboxImage();
 }
 
-/* ===========================
-   PREVIOUS
-=========================== */
-
 function showPreviousImage() {
     currentIndex--;
 
@@ -209,10 +190,6 @@ function showPreviousImage() {
 
     updateLightboxImage();
 }
-
-/* ===========================
-   UPDATE IMAGE
-=========================== */
 
 function updateLightboxImage() {
     const image =
