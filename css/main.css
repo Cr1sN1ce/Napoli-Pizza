@@ -726,7 +726,7 @@ section.hero {
 .delivery-scooter {
     animation: scooterRide 4s ease-in-out infinite;
 }
-/* ─── BURGER MENU ─── */
+
 .burger {
     display: none;
     flex-direction: column;
