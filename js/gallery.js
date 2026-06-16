@@ -1,238 +1,129 @@
-document.addEventListener(
-    "DOMContentLoaded",
-    () => {
-        initializeGallery();
-    }
-);
-
-
+let allImages = [];
+let currentFilter = 'all';
 let currentIndex = 0;
+let filteredImages = [];
 
-let galleryImages = [];
+document.addEventListener('DOMContentLoaded', async () => {
+    await loadGallery();
+    initializeFilters();
+});
 
-function initializeGallery() {
-    galleryImages =
-        Array.from(
-            document.querySelectorAll(
-                ".gallery-item img"
-            )
-        );
+async function loadGallery() {
+    const isInPages = window.location.pathname.includes('/pages/');
+    const jsonPath = isInPages ? '../data/gallery.json' : 'data/gallery.json';
 
-    if (
-        galleryImages.length === 0
-    ) {
+    try {
+        const response = await fetch(jsonPath);
+        allImages = await response.json();
+    } catch (err) {
+        console.error('Ошибка загрузки галереи:', err);
+        allImages = [];
+    }
+
+    renderGallery('all');
+}
+
+function renderGallery(filter) {
+    const container = document.getElementById('galleryContainer');
+    if (!container) return;
+
+    filteredImages = filter === 'all'
+        ? allImages
+        : allImages.filter(img => img.category === filter);
+
+    if (filteredImages.length === 0) {
+        container.innerHTML = `
+            <div class="gallery-empty col-12">
+                <h3>Nu sunt fotografii în această categorie</h3>
+                <p>Revino mai târziu.</p>
+            </div>`;
         return;
     }
 
-    galleryImages.forEach(
-        (image, index) => {
-            image.addEventListener(
-                "click",
-                () => {
-                    openLightbox(
-                        index
-                    );
-                }
-            );
-        }
-    );
+    container.innerHTML = filteredImages.map((img, index) => `
+        <div class="col-12 col-sm-6 col-lg-4">
+            <div class="gallery-item" data-index="${index}">
+                <img src="${img.src}" alt="${img.alt}" loading="lazy">
+            </div>
+        </div>
+    `).join('');
 
-    initializeKeyboardControls();
+    container.querySelectorAll('.gallery-item').forEach(item => {
+        item.addEventListener('click', () => {
+            openLightbox(parseInt(item.dataset.index));
+        });
+    });
 }
 
-function openLightbox(
-    index
-) {
-    currentIndex =
-        index;
+function initializeFilters() {
+    const buttons = document.querySelectorAll('.filter-btn');
+    buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            buttons.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            currentFilter = btn.dataset.filter;
+            renderGallery(currentFilter);
+        });
+    });
+}
 
-    const existing =
-        document.querySelector(
-            ".lightbox"
-        );
+function openLightbox(index) {
+    currentIndex = index;
 
-    if (existing) {
-        existing.remove();
-    }
+    const existing = document.querySelector('.lightbox');
+    if (existing) existing.remove();
 
-    const lightbox =
-        document.createElement(
-            "div"
-        );
-
-    lightbox.className =
-        "lightbox";
-
-    lightbox.innerHTML =
-        `
+    const lightbox = document.createElement('div');
+    lightbox.className = 'lightbox';
+    lightbox.innerHTML = `
         <div class="lightbox-overlay">
-
-            <button
-                class="lightbox-close"
-            >
-                ×
-            </button>
-
-            <button
-                class="lightbox-prev"
-            >
-                ❮
-            </button>
-
-            <img
-                class="lightbox-image"
-                src="${galleryImages[currentIndex].src}"
-                alt=""
-            >
-
-            <button
-                class="lightbox-next"
-            >
-                ❯
-            </button>
-
+            <button class="lightbox-close" aria-label="Închide">×</button>
+            <button class="lightbox-prev" aria-label="Anterior">❮</button>
+            <img class="lightbox-image" src="${filteredImages[currentIndex].src}" alt="${filteredImages[currentIndex].alt}">
+            <button class="lightbox-next" aria-label="Următor">❯</button>
+            <div class="lightbox-counter">${currentIndex + 1} / ${filteredImages.length}</div>
         </div>
     `;
 
-    document.body.appendChild(
-        lightbox
-    );
+    document.body.appendChild(lightbox);
+    document.body.style.overflow = 'hidden';
 
-    document.body.style.overflow =
-        "hidden";
-
-    initializeLightboxEvents();
-}
-
-function initializeLightboxEvents() {
-    const lightbox =
-        document.querySelector(
-            ".lightbox"
-        );
-
-    const closeButton =
-        document.querySelector(
-            ".lightbox-close"
-        );
-
-    const previousButton =
-        document.querySelector(
-            ".lightbox-prev"
-        );
-
-    const nextButton =
-        document.querySelector(
-            ".lightbox-next"
-        );
-
-    closeButton.addEventListener(
-        "click",
-        closeLightbox
-    );
-
-    previousButton.addEventListener(
-        "click",
-        showPreviousImage
-    );
-
-    nextButton.addEventListener(
-        "click",
-        showNextImage
-    );
-
-    lightbox.addEventListener(
-        "click",
-        event => {
-            if (
-                event.target ===
-                lightbox
-            ) {
-                closeLightbox();
-            }
+    lightbox.querySelector('.lightbox-close').addEventListener('click', closeLightbox);
+    lightbox.querySelector('.lightbox-prev').addEventListener('click', showPrev);
+    lightbox.querySelector('.lightbox-next').addEventListener('click', showNext);
+    lightbox.addEventListener('click', e => {
+        if (e.target === lightbox || e.target.classList.contains('lightbox-overlay')) {
+            closeLightbox();
         }
-    );
+    });
 }
 
 function closeLightbox() {
-    const lightbox =
-        document.querySelector(
-            ".lightbox"
-        );
-
-    if (lightbox) {
-        lightbox.remove();
-    }
-
-    document.body.style.overflow =
-        "";
+    const lightbox = document.querySelector('.lightbox');
+    if (lightbox) lightbox.remove();
+    document.body.style.overflow = '';
 }
 
-function showNextImage() {
-    currentIndex++;
-
-    if (
-        currentIndex >=
-        galleryImages.length
-    ) {
-        currentIndex = 0;
-    }
-
-    updateLightboxImage();
+function showNext() {
+    currentIndex = (currentIndex + 1) % filteredImages.length;
+    updateLightbox();
 }
 
-function showPreviousImage() {
-    currentIndex--;
-
-    if (currentIndex < 0) {
-        currentIndex =
-            galleryImages.length - 1;
-    }
-
-    updateLightboxImage();
+function showPrev() {
+    currentIndex = (currentIndex - 1 + filteredImages.length) % filteredImages.length;
+    updateLightbox();
 }
 
-function updateLightboxImage() {
-    const image =
-        document.querySelector(
-            ".lightbox-image"
-        );
-
-    if (!image) {
-        return;
-    }
-
-    image.src =
-        galleryImages[
-            currentIndex
-        ].src;
+function updateLightbox() {
+    const img = document.querySelector('.lightbox-image');
+    const counter = document.querySelector('.lightbox-counter');
+    if (img) img.src = filteredImages[currentIndex].src;
+    if (counter) counter.textContent = `${currentIndex + 1} / ${filteredImages.length}`;
 }
 
-function initializeKeyboardControls() {
-    document.addEventListener(
-        "keydown",
-        event => {
-            const lightbox =
-                document.querySelector(
-                    ".lightbox"
-                );
-
-            if (!lightbox) {
-                return;
-            }
-
-            switch (event.key) {
-                case "Escape":
-                    closeLightbox();
-                    break;
-
-                case "ArrowLeft":
-                    showPreviousImage();
-                    break;
-
-                case "ArrowRight":
-                    showNextImage();
-                    break;
-            }
-        }
-    );
-}
+document.addEventListener('keydown', e => {
+    if (!document.querySelector('.lightbox')) return;
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowRight') showNext();
+    if (e.key === 'ArrowLeft') showPrev();
+});

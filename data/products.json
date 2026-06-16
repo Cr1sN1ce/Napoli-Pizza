@@ -6,7 +6,7 @@
         "price": 120,
         "weight": 550,
         "featured": true,
-        "image": "../assets/products/pizza/margherita.jpg"
+        "image": "../assets/products/pizza/margherita.webp"
     },
     {
         "id": 2,
@@ -16,7 +16,7 @@
         "price": 145,
         "weight": 600,
         "featured": true,
-        "image": "../assets/products/pizza/diavola.jpg"
+        "image": "../assets/products/pizza/diavola.webp"
     },
     {
         "id": 3,
@@ -26,7 +26,7 @@
         "price": 150,
         "weight": 650,
         "featured": false,
-        "image": "../assets/products/pizza/capriciosa.jpg"
+        "image": "../assets/products/pizza/capriciosa.webp"
     },
     {
         "id": 4,
@@ -36,7 +36,7 @@
         "price": 165,
         "weight": 600,
         "featured": true,
-        "image": "../assets/products/pizza/quattro-formaggi.jpg"
+        "image": "../assets/products/pizza/quattro-formaggi.webp"
     },
     {
         "id": 5,
@@ -46,7 +46,7 @@
         "price": 145,
         "weight": 620,
         "featured": false,
-        "image": "../assets/products/pizza/prosciutto.jpg"
+        "image": "../assets/products/pizza/prosciutto.webp"
     },
     {
         "id": 6,
@@ -56,7 +56,7 @@
         "price": 135,
         "weight": 580,
         "featured": false,
-        "image": "../assets/products/pizza/vegetariana.jpg"
+        "image": "../assets/products/pizza/vegetariana.webp"
     },
     {
         "id": 7,
@@ -66,7 +66,7 @@
         "price": 170,
         "weight": 650,
         "featured": true,
-        "image": "../assets/products/pizza/napoli.jpg"
+        "image": "../assets/products/pizza/napoli.webp"
     },
     {
         "id": 8,
@@ -76,7 +76,7 @@
         "price": 175,
         "weight": 700,
         "featured": false,
-        "image": "../assets/products/pizza/bbq-chicken.jpg"
+        "image": "../assets/products/pizza/bbq-chicken.webp"
     },
 
     {
@@ -87,7 +87,7 @@
         "price": 110,
         "weight": 350,
         "featured": true,
-        "image": "../assets/products/burger/classic.jpg"
+        "image": "../assets/products/burger/classic.webp"
     },
     {
         "id": 10,
@@ -97,7 +97,7 @@
         "price": 120,
         "weight": 370,
         "featured": true,
-        "image": "../assets/products/burger/cheese.jpg"
+        "image": "../assets/products/burger/cheese.webp"
     },
     {
         "id": 11,
@@ -107,7 +107,7 @@
         "price": 155,
         "weight": 500,
         "featured": false,
-        "image": "../assets/products/burger/double.jpg"
+        "image": "../assets/products/burger/double.webp"
     },
     {
         "id": 12,
@@ -117,7 +117,7 @@
         "price": 115,
         "weight": 360,
         "featured": false,
-        "image": "../assets/products/burger/chicken.jpg"
+        "image": "../assets/products/burger/chicken.webp"
     },
     {
         "id": 13,
@@ -127,7 +127,7 @@
         "price": 135,
         "weight": 400,
         "featured": false,
-        "image": "../assets/products/burger/bbq.jpg"
+        "image": "../assets/products/burger/bbq.webp"
     },
     {
         "id": 14,
@@ -137,7 +137,7 @@
         "price": 145,
         "weight": 420,
         "featured": true,
-        "image": "../assets/products/burger/bacon.jpg"
+        "image": "../assets/products/burger/bacon.webp"
     },
     {
         "id": 15,
@@ -147,7 +147,7 @@
         "price": 140,
         "weight": 410,
         "featured": false,
-        "image": "../assets/products/burger/mexican.jpg"
+        "image": "../assets/products/burger/mexican.webp"
     },
     {
         "id": 16,
@@ -157,7 +157,7 @@
         "price": 120,
         "weight": 340,
         "featured": false,
-        "image": "../assets/products/burger/veggie.jpg"
+        "image": "../assets/products/burger/veggie.webp"
     },
 
     {
@@ -168,7 +168,7 @@
         "price": 135,
         "weight": 450,
         "featured": true,
-        "image": "../assets/products/pasta/carbonara.jpg"
+        "image": "../assets/products/pasta/carbonara.webp"
     },
     {
         "id": 18,
@@ -178,7 +178,7 @@
         "price": 140,
         "weight": 470,
         "featured": true,
-        "image": "../assets/products/pasta/bolognese.jpg"
+        "image": "../assets/products/pasta/bolognese.webp"
     },
     {
         "id": 19,
@@ -188,7 +188,7 @@
         "price": 145,
         "weight": 460,
         "featured": false,
-        "image": "../assets/products/pasta/alfredo.jpg"
+        "image": "../assets/products/pasta/alfredo.webp"
     },
     {
         "id": 20,
@@ -198,7 +198,7 @@
         "price": 135,
         "weight": 430,
         "featured": false,
-        "image": "../assets/products/pasta/pesto.jpg"
+        "image": "../assets/products/pasta/pesto.webp"
     },
     {
         "id": 21,
@@ -208,7 +208,7 @@
         "price": 190,
         "weight": 500,
         "featured": true,
-        "image": "../assets/products/pasta/frutti-di-mare.jpg"
+        "image": "../assets/products/pasta/frutti-di-mare.webp"
     },
     {
         "id": 22,
@@ -218,7 +218,7 @@
         "price": 130,
         "weight": 420,
         "featured": false,
-        "image": "../assets/products/pasta/arrabbiata.jpg"
+        "image": "../assets/products/pasta/arrabbiata.webp"
     },
     {
         "id": 23,
@@ -228,7 +228,7 @@
         "price": 150,
         "weight": 450,
         "featured": false,
-        "image": "../assets/products/pasta/gorgonzola.jpg"
+        "image": "../assets/products/pasta/gorgonzola.webp"
     },
     {
         "id": 24,
@@ -238,7 +238,7 @@
         "price": 145,
         "weight": 460,
         "featured": false,
-        "image": "../assets/products/pasta/pollo.jpg"
+        "image": "../assets/products/pasta/pollo.webp"
     },
 
     {
@@ -249,7 +249,7 @@
         "price": 95,
         "weight": 320,
         "featured": true,
-        "image": "../assets/products/salad/caesar.jpg"
+        "image": "../assets/products/salad/caesar.webp"
     },
     {
         "id": 26,
@@ -259,7 +259,7 @@
         "price": 90,
         "weight": 300,
         "featured": false,
-        "image": "../assets/products/salad/greek.jpg"
+        "image": "../assets/products/salad/greek.webp"
     },
     {
         "id": 27,
@@ -269,7 +269,7 @@
         "price": 105,
         "weight": 340,
         "featured": false,
-        "image": "../assets/products/salad/tuna.jpg"
+        "image": "../assets/products/salad/tuna.webp"
     },
     {
         "id": 28,
@@ -279,7 +279,7 @@
         "price": 85,
         "weight": 280,
         "featured": false,
-        "image": "../assets/products/salad/caprese.jpg"
+        "image": "../assets/products/salad/caprese.webp"
     },
     {
         "id": 29,
@@ -289,7 +289,7 @@
         "price": 80,
         "weight": 290,
         "featured": false,
-        "image": "../assets/products/salad/garden.jpg"
+        "image": "../assets/products/salad/garden.webp"
     },
     {
         "id": 30,
@@ -299,7 +299,7 @@
         "price": 100,
         "weight": 330,
         "featured": true,
-        "image": "../assets/products/salad/chicken.jpg"
+        "image": "../assets/products/salad/chicken.webp"
     },
     {
         "id": 31,
@@ -309,7 +309,7 @@
         "price": 110,
         "weight": 340,
         "featured": false,
-        "image": "../assets/products/salad/mediterranean.jpg"
+        "image": "../assets/products/salad/mediterranean.webp"
     },
     {
         "id": 32,
@@ -319,7 +319,7 @@
         "price": 120,
         "weight": 320,
         "featured": true,
-        "image": "../assets/products/salad/avocado.jpg"
+        "image": "../assets/products/salad/avocado.webp"
     },
 
     {
@@ -330,7 +330,7 @@
         "price": 75,
         "weight": 180,
         "featured": true,
-        "image": "../assets/products/dessert/tiramisu.jpg"
+        "image": "../assets/products/dessert/tiramisu.webp"
     },
     {
         "id": 34,
@@ -340,7 +340,7 @@
         "price": 80,
         "weight": 200,
         "featured": true,
-        "image": "../assets/products/dessert/cheesecake.jpg"
+        "image": "../assets/products/dessert/cheesecake.webp"
     },
     {
         "id": 35,
@@ -350,7 +350,7 @@
         "price": 70,
         "weight": 190,
         "featured": false,
-        "image": "../assets/products/dessert/chocolate-cake.jpg"
+        "image": "../assets/products/dessert/chocolate-cake.webp"
     },
     {
         "id": 36,
@@ -360,7 +360,7 @@
         "price": 65,
         "weight": 170,
         "featured": false,
-        "image": "../assets/products/dessert/panna-cotta.jpg"
+        "image": "../assets/products/dessert/panna-cotta.webp"
     },
     {
         "id": 37,
@@ -370,7 +370,7 @@
         "price": 60,
         "weight": 160,
         "featured": false,
-        "image": "../assets/products/dessert/brownie.jpg"
+        "image": "../assets/products/dessert/brownie.webp"
     },
     {
         "id": 38,
@@ -380,7 +380,7 @@
         "price": 55,
         "weight": 150,
         "featured": true,
-        "image": "../assets/products/dessert/ice-cream.jpg"
+        "image": "../assets/products/dessert/ice-cream.webp"
     },
     {
         "id": 39,
@@ -390,7 +390,7 @@
         "price": 65,
         "weight": 180,
         "featured": false,
-        "image": "../assets/products/dessert/apple-pie.jpg"
+        "image": "../assets/products/dessert/apple-pie.webp"
     },
     {
         "id": 40,
@@ -400,7 +400,7 @@
         "price": 40,
         "weight": 120,
         "featured": false,
-        "image": "../assets/products/dessert/donut.jpg"
+        "image": "../assets/products/dessert/donut.webp"
     },
 
     {
@@ -411,7 +411,7 @@
         "price": 30,
         "weight": 500,
         "featured": true,
-        "image": "../assets/products/drinks/coca-cola.jpg"
+        "image": "../assets/products/drinks/coca-cola.webp"
     },
     {
         "id": 42,
@@ -421,7 +421,7 @@
         "price": 30,
         "weight": 500,
         "featured": false,
-        "image": "../assets/products/drinks/fanta.jpg"
+        "image": "../assets/products/drinks/fanta.webp"
     },
     {
         "id": 43,
@@ -431,7 +431,7 @@
         "price": 30,
         "weight": 500,
         "featured": false,
-        "image": "../assets/products/drinks/sprite.jpg"
+        "image": "../assets/products/drinks/sprite.webp"
     },
     {
         "id": 44,
@@ -441,7 +441,7 @@
         "price": 35,
         "weight": 500,
         "featured": false,
-        "image": "../assets/products/drinks/nestea.jpg"
+        "image": "../assets/products/drinks/nestea.webp"
     },
     {
         "id": 45,
@@ -451,7 +451,7 @@
         "price": 40,
         "weight": 400,
         "featured": true,
-        "image": "../assets/products/drinks/orange-juice.jpg"
+        "image": "../assets/products/drinks/orange-juice.webp"
     },
     {
         "id": 46,
@@ -461,7 +461,7 @@
         "price": 40,
         "weight": 400,
         "featured": false,
-        "image": "../assets/products/drinks/apple-juice.jpg"
+        "image": "../assets/products/drinks/apple-juice.webp"
     },
     {
         "id": 47,
@@ -471,7 +471,7 @@
         "price": 20,
         "weight": 500,
         "featured": false,
-        "image": "../assets/products/drinks/water.jpg"
+        "image": "../assets/products/drinks/water.webp"
     },
     {
         "id": 48,
@@ -481,6 +481,6 @@
         "price": 45,
         "weight": 450,
         "featured": true,
-        "image": "../assets/products/drinks/lemonade.jpg"
+        "image": "../assets/products/drinks/lemonade.webp"
     }
 ]

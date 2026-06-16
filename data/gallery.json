@@ -1,0 +1,66 @@
+[{
+        "id": 0,
+        "category": "pizza",
+        "src": "../assets/gallery/bbq-chicken.webp",
+        "alt": "Bbq Chiken"
+    },
+    {
+        "id": 1,
+        "category": "pizza",
+        "src": "../assets/gallery/diavola.webp",
+        "alt": "Diavola"
+    }, {
+        "id": 2,
+        "category": "pizza",
+        "src": "../assets/gallery/prosciutto.webp",
+        "alt": "Prosciutto"
+    },
+    {
+        "id": 3,
+        "category": "pizza",
+        "src": "../assets/gallery/vegetariana.webp",
+        "alt": "Vegetariana"
+    },
+    {
+        "id": 10,
+        "category": "burger",
+        "src": "../assets/gallery/bacon.webp",
+        "alt": "Burger Bacon"
+    },
+    {
+        "id": 11,
+        "category": "burger",
+        "src": "../assets/gallery/chicken.webp",
+        "alt": "Burger Chicken"
+    },
+    {
+        "id": 12,
+        "category": "burger",
+        "src": "../assets/gallery/mexican.webp",
+        "alt": "Burger mexican"
+    },
+    {
+        "id": 20,
+        "category": "pasta",
+        "src": "../assets/gallery/alfredo.webp",
+        "alt": "Alfredo"
+    },
+    {
+        "id": 21,
+        "category": "pasta",
+        "src": "../assets/gallery/bolognese.webp",
+        "alt": "Bolognese"
+    },
+    {
+        "id": 30,
+        "category": "restaurant",
+        "src": "../assets/gallery/gallery-7.webp",
+        "alt": "Interior"
+    },
+    {
+        "id": 31,
+        "category": "restaurant",
+        "src": "../assets/gallery/gallery-8.webp",
+        "alt": "Atmosfera"
+    }
+]
