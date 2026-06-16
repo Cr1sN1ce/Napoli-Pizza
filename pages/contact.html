@@ -3,8 +3,6 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Contact | Napoli Pizza Cahul</title>
@@ -34,6 +32,7 @@
 
             </nav>
 
+            <button class="burger" id="burger" aria-label="Meniu"><span></span><span></span><span></span></button>
             <a href="contact.html" class="header-btn">
             Comandă
         </a>
@@ -42,6 +41,14 @@
         </div>
 
     </header>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="../index.html">Acasă</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">Despre noi</a>
+        <a href="gallery.html">Galerie</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="contact.html" class="header-btn-mobile">Comandă</a>
+    </div>
 
     <section class="contact-section">
 
@@ -103,7 +110,7 @@
                         <input type="email" id="inputEmail" placeholder="Email">
                         <input type="tel" id="inputTelefon" placeholder="Telefon">
                         <textarea id="inputMesaj" placeholder="Mesajul tău"></textarea>
-                        <button type="button" id="submitBtn" class="btn fw-bold" style="background:#FFB353;color:#24010E;border:none;">Trimite</button>
+                        <button type="button" id="submitBtn" class="btn btn-primary">Trimite</button>
 
                     </form>
 
@@ -139,7 +146,7 @@
                 Bucură-te de preparatele Napoli Pizza direct la tine acasă.
             </p>
 
-            <a href="menu.html" class="btn fw-bold" style="background:#FFB353;color:#24010E;border:none;">
+            <a href="menu.html" class="btn btn-primary">
                 Vezi Menu
             </a>
 
@@ -294,7 +301,20 @@
             }
         });
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const burger = document.getElementById("burger");
+        const mobileMenu = document.getElementById("mobileMenu");
+        burger.addEventListener("click", () => {
+            burger.classList.toggle("active");
+            mobileMenu.classList.toggle("active");
+        });
+        document.querySelectorAll(".mobile-menu a").forEach(link => {
+            link.addEventListener("click", () => {
+                burger.classList.remove("active");
+                mobileMenu.classList.remove("active");
+            });
+        });
+    </script>
 </body>
 
 </html>

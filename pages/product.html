@@ -3,8 +3,6 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title id="pageTitle">Produs | Napoli Pizza Cahul</title>
@@ -34,6 +32,7 @@
 
             </nav>
 
+            <button class="burger" id="burger" aria-label="Meniu"><span></span><span></span><span></span></button>
             <a href="contact.html" class="header-btn">
             Comandă
         </a>
@@ -42,6 +41,14 @@
         </div>
 
     </header>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="../index.html">Acasă</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">Despre noi</a>
+        <a href="gallery.html">Galerie</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="header-btn-mobile">Comandă</a>
+    </div>
 
     <main class="product-page">
 
@@ -114,7 +121,7 @@
                                 <button type="button" class="qty-btn" id="qtyPlus" aria-label="Crește cantitatea">+</button>
                             </div>
 
-                            <button class="btn fw-bold" style="background:#FFB353;color:#24010E;border:none;" id="addToCartBtn">
+                            <button class="btn btn-primary" id="addToCartBtn">
                                 Adaugă în Coș
                             </button>
 
@@ -257,7 +264,20 @@
     <script src="../js/data-loader.js"></script>
     <script src="../js/product.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const burger = document.getElementById("burger");
+        const mobileMenu = document.getElementById("mobileMenu");
+        burger.addEventListener("click", () => {
+            burger.classList.toggle("active");
+            mobileMenu.classList.toggle("active");
+        });
+        document.querySelectorAll(".mobile-menu a").forEach(link => {
+            link.addEventListener("click", () => {
+                burger.classList.remove("active");
+                mobileMenu.classList.remove("active");
+            });
+        });
+    </script>
 </body>
 
 </html>

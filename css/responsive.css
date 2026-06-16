@@ -225,3 +225,8 @@
         height: 38px;
     }
 }
+@media (max-width: 768px) {
+    .burger {
+        display: flex;
+    }
+}

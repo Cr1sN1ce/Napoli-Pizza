@@ -54,13 +54,13 @@
     {
         "id": 30,
         "category": "restaurant",
-        "src": "../assets/gallery/gallery-7.webp",
+        "src": "../assets/gallery/interior.webp",
         "alt": "Interior"
     },
     {
         "id": 31,
         "category": "restaurant",
-        "src": "../assets/gallery/gallery-8.webp",
-        "alt": "Atmosfera"
+        "src": "../assets/gallery/interior1.webp",
+        "alt": "Hol"
     }
 ]
