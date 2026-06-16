@@ -41,14 +41,6 @@
         </div>
 
     </header>
-    <div class="mobile-menu" id="mobileMenu">
-        <a href="../index.html">Acasă</a>
-        <a href="menu.html">Menu</a>
-        <a href="about.html">Despre noi</a>
-        <a href="gallery.html">Galerie</a>
-        <a href="contact.html" class="active">Contact</a>
-        <a href="contact.html" class="header-btn-mobile">Comandă</a>
-    </div>
 
     <section class="contact-section">
 
@@ -301,20 +293,7 @@
             }
         });
     </script>
-    <script>
-        const burger = document.getElementById("burger");
-        const mobileMenu = document.getElementById("mobileMenu");
-        burger.addEventListener("click", () => {
-            burger.classList.toggle("active");
-            mobileMenu.classList.toggle("active");
-        });
-        document.querySelectorAll(".mobile-menu a").forEach(link => {
-            link.addEventListener("click", () => {
-                burger.classList.remove("active");
-                mobileMenu.classList.remove("active");
-            });
-        });
-    </script>
+
 </body>
 
 </html>
