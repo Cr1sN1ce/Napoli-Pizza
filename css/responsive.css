@@ -78,15 +78,17 @@
         position: relative;
         min-height: 260px;
         width: 100%;
+        overflow: visible;
     }
     .hero-pizza {
         width: 260px !important;
-        right: 50%;
-        transform: translateX(50%);
+        right: 0;
+        left: auto;
+        animation: floatPizza 5s ease-in-out infinite;
     }
     .hero-grapes {
         width: 160px;
-        left: 10px;
+        left: 0;
     }
     .quick-menu .container {
         padding-left: 20px;
@@ -181,6 +183,8 @@
     }
     .hero-pizza {
         width: 200px !important;
+        right: 0;
+        left: auto;
     }
     .hero-grapes {
         width: 120px;
@@ -225,6 +229,7 @@
         height: 38px;
     }
 }
+
 @media (max-width: 768px) {
     .burger {
         display: flex;
